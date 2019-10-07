@@ -1,0 +1,92 @@
+
+
+/////////// CSS DIRECTORY /////////////
+// 1a. Color Theme Variables
+// 2a. Imports
+// 3a. Universal Styles
+// 4a. Mobile Responsiveness Styles
+// 
+
+
+// 1a. Color Theme Variables
+$themeDarkAqua: #1a535c;
+$themeLightAqua: #4ecdc4;
+$themeWhite: #f7fff7;
+$themeRed: #ff6b6b;
+$themeOj: #ff914d;
+$themeYellow: #ffe66d;
+
+// 2a. Imports
+// Hamburger CSS
+
+$hamburger-layer-color: $themeWhite !default;
+@import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+
+// 3a. Universal Styles
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+// Font - Fira 300,400,500,700
+h1, h2, h3, h4, h5, h6, p, a, span, div {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+////////// 4a. MOBILE RESPONSIVE STYLES ////////////
+
+// Navbar
+header {
+    background: $themeOj;
+}
+
+.main-nav {
+    padding: 1rem;
+    text-align: center;
+}
+
+.nav-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-logo img {
+    width: 50px;
+}
+
+.logo-link {
+    color: $themeWhite;
+    text-transform: uppercase;
+    font-family: 'Crushed', cursive;
+    font-size: 2rem;
+}
+
+.nav-flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-link {
+    color: $themeWhite;
+    font-size: 1.25rem;
+    padding: 5px 0;
+}
+
+  
+
+
+
