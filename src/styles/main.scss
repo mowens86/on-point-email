@@ -97,16 +97,69 @@ header {
 
 
 // Hero Section
-.hero-content {
-    background-image: url("../../public/assets/img/Hero_Background_Mobile.png");
-    background-repeat: no-repeat;
-    background-size: auto;
-    height: 50vh;
-    
+// .hero-content {
+//     background-image: url("../../public/assets/img/Hero_Background_Mobile.png");
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     background-position: center;
+//     height: 50vh;
+//     width: 95vw;
+// }
+
+.hero-content-h1, .hero-content-p {
+    margin: 0 3rem;
 }
 
+.hero-content-h1 {
+    color: $themeDarkAqua;
+    padding-top: 1rem;
+}
+
+.hero-content-p {
+    padding-top: 1rem;
+}
+
+
 .hero-logo {
-    width: 125px;
+    display: none;
+}
+
+.hero-mobile {
+    width: 80%;
+}
+
+.btn-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn {
+    margin: 2rem .5rem;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+.red {
+    background-color: #f13f3f;
+    color: $themeWhite;
+    transition: all 0.3s ease-in-out;
+}
+
+.red:hover {
+    background-color: #922424;
+}
+
+.yellow {
+    background-color: $themeYellow;
+    color: #404040;
+    transition: all 0.5s ease-in-out;
+}
+
+.yellow:hover {
+    background-color: #a89745;
+    color: $themeWhite;
 }
 
 .rocket {
