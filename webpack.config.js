@@ -85,7 +85,7 @@ module.exports = {
               // and when generating the CSS file, it will be
               // outputted as url(../images/venice-italy.jpg), which
               // is relative to /styles/main.css
-              publicPath: '../images',
+              publicPath: '../img',
               // When this option is 'true', the loader will emit
               // the image to output.path
               emitFile: false

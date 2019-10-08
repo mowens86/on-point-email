@@ -725,7 +725,7 @@ ul {
 header {
   background: #ff914d; }
 
-.main-nav {
+.main-nav, .hero-section {
   padding: 1rem;
   text-align: center; }
 
@@ -743,11 +743,31 @@ header {
   font-size: 2rem; }
 
 .nav-flex-container {
-  display: flex;
-  flex-direction: column; }
+  display: none;
+  flex-direction: column;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
 
 .nav-link {
   color: #f7fff7;
   font-size: 1.25rem;
-  padding: 5px 0; }
+  padding: 5px 0;
+  transition: 0.3s ease-in-out; }
+
+.nav-link:hover {
+  background: #ff6b6b; }
+
+.hero-content {
+  background-image: url(../img/Hero_Background_Mobile.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 50vh; }
+
+.hero-logo {
+  width: 125px; }
+
+.rocket {
+  width: 95%; }
 

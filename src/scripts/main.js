@@ -19,7 +19,6 @@ stickyNavigation = () => {
 
 // Hamburger Bar
 const hamburgerBtn = document.querySelector(".hamburger");
-const navBar = document.querySelector(".nav-flex-container");
 
 hamburgerBtn.addEventListener("click", () => {
   
@@ -27,7 +26,7 @@ hamburgerBtn.addEventListener("click", () => {
   hamburgerBtn.classList.toggle("is-active");
 
   // Create if statement to make nav-links display or not
-  hamburgerBtn.classList.contains("is-active") ? navBar.style.display = "flex" : navBar.style.display = "none";
+  hamburgerBtn.classList.contains("is-active") ? navbar.style.display = "flex" : navbar.style.display = "none";
 });
 
 
@@ -37,9 +36,9 @@ function checkForViewportChange () {
     const state = window.matchMedia("(min-width: 600px)").matches;
     if (state != lastState) {
         if (state) {
-          navBar.style.display = "flex";
+          navbar.style.display = "flex";
         } else {
-          navBar.style.display = "none";
+          navbar.style.display = "none";
         }
         lastState = state;
 }}
