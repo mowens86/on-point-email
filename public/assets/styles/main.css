@@ -759,7 +759,12 @@ header {
 .nav-link:hover {
   background: #ff6b6b; }
 
-.hero-content-h1, .hero-content-p {
+.hero-container,
+.what-container {
+  margin: 3%; }
+
+.hero-content-h1,
+.hero-content-p {
   margin: 0 3rem; }
 
 .hero-content-h1 {
@@ -781,6 +786,7 @@ header {
   justify-content: center; }
 
 .btn {
+  display: inline-block;
   margin: 2rem .5rem;
   padding: 1rem 2rem;
   border-radius: 8px;
@@ -805,4 +811,64 @@ header {
 
 .rocket {
   width: 95%; }
+
+.what-content {
+  text-align: center; }
+
+.what-content-h1 {
+  color: #ff6b6b; }
+
+.what-content-h2,
+.what-content-h3,
+.what-content-p {
+  color: #404040; }
+
+.what-content-h2 {
+  margin-top: -1.5rem; }
+
+.what-content-h3 {
+  font-weight: 400; }
+
+.what-content-p {
+  margin: 1% 25%; }
+
+.jobs-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.brown {
+  background: #ffd9c2; }
+
+.light-blue {
+  background: #b2fffa; }
+
+.light-red {
+  background: #ffcaca; }
+
+.jobs-box {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  margin: 20px auto;
+  border-radius: 50% / 10%;
+  color: #f7fff7;
+  text-align: center;
+  text-indent: .1em;
+  z-index: -1; }
+
+.jobs-box:before {
+  content: '';
+  position: absolute;
+  top: 9%;
+  bottom: 9%;
+  right: -5%;
+  left: -5%;
+  background: inherit;
+  border-radius: 5% / 50%;
+  z-index: -1; }
+
+.jobs-img {
+  margin-top: 1rem;
+  width: 200px; }
 

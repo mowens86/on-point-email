@@ -15,6 +15,7 @@ $themeWhite: #f7fff7;
 $themeRed: #ff6b6b;
 $themeOj: #ff914d;
 $themeYellow: #ffe66d;
+$fontGray: #404040;
 
 // 2a. Imports
 // Hamburger CSS
@@ -97,16 +98,15 @@ header {
 
 
 // Hero Section
-// .hero-content {
-//     background-image: url("../../public/assets/img/Hero_Background_Mobile.png");
-//     background-repeat: no-repeat;
-//     background-size: contain;
-//     background-position: center;
-//     height: 50vh;
-//     width: 95vw;
-// }
 
-.hero-content-h1, .hero-content-p {
+// Mobile content margins
+.hero-container,
+.what-container {
+    margin: 3%;
+}
+
+.hero-content-h1, 
+.hero-content-p {
     margin: 0 3rem;
 }
 
@@ -135,6 +135,7 @@ header {
 }
 
 .btn {
+    display: inline-block;
     margin: 2rem .5rem;
     padding: 1rem 2rem;
     border-radius: 8px;
@@ -165,6 +166,82 @@ header {
 .rocket {
     width: 95%;
 }
+
+// What We Do Section
+
+.what-content {
+    text-align: center;
+}
+
+.what-content-h1 {
+    color: $themeRed;
+}
+
+.what-content-h2,
+.what-content-h3,
+.what-content-p {
+    color:$fontGray;
+}
+
+.what-content-h2 {
+    margin-top: -1.5rem;
+}
+
+.what-content-h3 {
+    font-weight: 400;
+}
+
+
+.what-content-p {
+    margin: 1% 25%;
+}
+
+.jobs-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.brown {
+    background: #ffd9c2;
+}
+
+.light-blue {
+    background: #b2fffa;
+}
+
+.light-red {
+    background: #ffcaca;
+}
+
+.jobs-box {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 20px auto;
+    border-radius: 50% / 10%;
+    color: $themeWhite;
+    text-align: center;
+    text-indent: .1em;
+    z-index: -1;
+  }
+  .jobs-box:before {
+    content: '';
+    position: absolute;
+    top: 9%;
+    bottom: 9%;
+    right: -5%;
+    left: -5%;
+    background: inherit;
+    border-radius: 5% / 50%;
+    z-index: -1;
+  }
+
+.jobs-img {
+    margin-top: 1rem;
+    width: 200px;
+}
+
   
 
 
