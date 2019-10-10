@@ -97,14 +97,42 @@ header {
 }
 
 
-// Hero Section
 
-// Mobile content margins
+
+// Multiple Section Styles
 .hero-container,
-.what-container {
-    margin: 3%;
+.what-container,
+.choose-container {
+    padding: 3% 10%;
 }
 
+.what-content,
+.choose-content {
+    text-align: center;
+}
+
+.what-content-h1,
+.choose-content-h1 {
+    color: $themeRed;
+}
+
+.what-content-h3,
+.choose-content-h3 {
+    font-weight: 500;
+}
+
+// Dividers
+
+.rocket,
+.divider {
+    width: 95%;
+}
+
+.divider {
+    margin-bottom: -2%;
+}
+
+// Hero Section
 .hero-content-h1, 
 .hero-content-p {
     margin: 0 3rem;
@@ -163,32 +191,18 @@ header {
     color: $themeWhite;
 }
 
-.rocket {
-    width: 95%;
-}
+
 
 // What We Do Section
-
-.what-content {
-    text-align: center;
-}
-
-.what-content-h1 {
-    color: $themeRed;
-}
-
 .what-content-h2,
 .what-content-h3,
-.what-content-p {
+.what-content-p,
+.choose-content-h3 {
     color:$fontGray;
 }
 
 .what-content-h2 {
     margin-top: -1.5rem;
-}
-
-.what-content-h3 {
-    font-weight: 400;
 }
 
 
@@ -242,7 +256,28 @@ header {
     width: 200px;
 }
 
-  
+// What We Do
+
+.choose-container {
+    background-color: $themeYellow;
+}
+
+.choose-flex {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.checkmark {
+    width: 25px;
+    margin-bottom: -5px; 
+}
+
+.choose-content-p {
+    padding: .5rem 0;
+}
+
+
 
 
 

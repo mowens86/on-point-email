@@ -1,7 +1,7 @@
 //jshint esversion:6
 
 // When the user scrolls the page, execute myFunction 
-window.onscroll = () => { stickyNavigation() };
+window.onscroll = () => { stickyNavigation(); };
 
 // Get the navbar
 const navbar = document.getElementById("navbar");
@@ -43,4 +43,4 @@ function checkForViewportChange () {
         lastState = state;
 }}
 
-window.setInterval (checkForViewportChange, 150);
+window.setInterval(checkForViewportChange, 150);

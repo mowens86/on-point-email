@@ -760,8 +760,28 @@ header {
   background: #ff6b6b; }
 
 .hero-container,
-.what-container {
-  margin: 3%; }
+.what-container,
+.choose-container {
+  padding: 3% 10%; }
+
+.what-content,
+.choose-content {
+  text-align: center; }
+
+.what-content-h1,
+.choose-content-h1 {
+  color: #ff6b6b; }
+
+.what-content-h3,
+.choose-content-h3 {
+  font-weight: 500; }
+
+.rocket,
+.divider {
+  width: 95%; }
+
+.divider {
+  margin-bottom: -2%; }
 
 .hero-content-h1,
 .hero-content-p {
@@ -809,25 +829,14 @@ header {
   background-color: #a89745;
   color: #f7fff7; }
 
-.rocket {
-  width: 95%; }
-
-.what-content {
-  text-align: center; }
-
-.what-content-h1 {
-  color: #ff6b6b; }
-
 .what-content-h2,
 .what-content-h3,
-.what-content-p {
+.what-content-p,
+.choose-content-h3 {
   color: #404040; }
 
 .what-content-h2 {
   margin-top: -1.5rem; }
-
-.what-content-h3 {
-  font-weight: 400; }
 
 .what-content-p {
   margin: 1% 25%; }
@@ -871,4 +880,19 @@ header {
 .jobs-img {
   margin-top: 1rem;
   width: 200px; }
+
+.choose-container {
+  background-color: #ffe66d; }
+
+.choose-flex {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem; }
+
+.checkmark {
+  width: 25px;
+  margin-bottom: -5px; }
+
+.choose-content-p {
+  padding: .5rem 0; }
 
