@@ -102,34 +102,43 @@ header {
 // Multiple Section Styles
 .hero-container,
 .what-container,
-.choose-container {
+.choose-container,
+.meet-container {
     padding: 3% 10%;
 }
 
 .what-content,
-.choose-content {
+.choose-content,
+.meet-content {
     text-align: center;
 }
 
 .what-content-h1,
-.choose-content-h1 {
+.choose-content-h1,
+.meet-content-h1 {
     color: $themeRed;
 }
 
 .what-content-h3,
-.choose-content-h3 {
+.choose-content-h3,
+.meet-content-h3 {
     font-weight: 500;
 }
 
 // Dividers
 
 .rocket,
-.divider {
+.divider,
+.divider-2 {
     width: 95%;
 }
 
 .divider {
     margin-bottom: -2%;
+}
+
+.divider-2 {
+    margin-top: -2%;
 }
 
 // Hero Section
@@ -230,7 +239,7 @@ header {
 
 .jobs-box {
     position: relative;
-    width: 350px;
+    width: 300px;
     height: 350px;
     margin: 20px auto;
     border-radius: 50% / 10%;
