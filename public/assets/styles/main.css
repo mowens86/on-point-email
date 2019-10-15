@@ -762,17 +762,20 @@ header {
 .hero-container,
 .what-container,
 .choose-container,
-.meet-container {
+.meet-container,
+.testimonial-container {
   padding: 3% 10%; }
 
 .what-content,
 .choose-content,
-.meet-content {
+.meet-content,
+.testimonial-container {
   text-align: center; }
 
 .what-content-h1,
 .choose-content-h1,
-.meet-content-h1 {
+.meet-content-h1,
+.testimonial-content-h1 {
   color: #ff6b6b; }
 
 .what-content-h3,
@@ -903,4 +906,44 @@ header {
 
 .choose-content-p {
   padding: .5rem 0; }
+
+.meet-content-pic {
+  width: 150px;
+  border-radius: 50%; }
+
+.meet-content-h3 {
+  padding: .5rem 0; }
+
+.dark-aqua {
+  background-color: #1a535c;
+  color: #f7fff7;
+  transition: all 0.3s ease-in-out; }
+
+.dark-aqua:hover {
+  background-color: #4ecdc4;
+  color: #404040; }
+
+.testimonial-container {
+  background-color: #ff6b6b;
+  position: relative; }
+
+.quote1 {
+  width: 10%;
+  left: 5px;
+  bottom: 60%;
+  position: absolute; }
+
+.quote2 {
+  width: 10%;
+  right: 5px;
+  bottom: 10%;
+  position: absolute; }
+
+.testimonial-content,
+.testimonial-content-h1 {
+  color: #f7fff7; }
+
+.testimonial-content-h2 {
+  font-family: 'Yellowtail', cursive;
+  padding-top: .5rem; }
 
