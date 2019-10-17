@@ -764,7 +764,8 @@ header {
 .choose-container,
 .meet-container,
 .testimonial-container,
-.quote-container {
+.quote-container,
+.footer-container {
   padding: 3% 10%; }
 
 .what-content,
@@ -798,7 +799,8 @@ header {
 .rocket,
 .divider,
 .divider-2 {
-  width: 95%; }
+  width: 95%;
+  z-index: 5; }
 
 .divider {
   margin-bottom: -2%; }
@@ -931,7 +933,8 @@ header {
 
 .testimonial-container {
   background-color: #ff6b6b;
-  position: relative; }
+  position: relative;
+  z-index: -5; }
 
 .quote1 {
   width: 10%;
@@ -977,4 +980,45 @@ header {
 .textarea-1 {
   margin: 0 .25rem .25rem .25rem;
   width: 100%; }
+
+.quote-form-button {
+  font-weight: 800;
+  cursor: pointer; }
+
+.footer-container {
+  background-color: #1a535c; }
+
+.display-none {
+  display: none; }
+
+.footer-content-flexbox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; }
+
+.footer-content-h2,
+.footer-content-h4,
+.footer-content-link,
+.footer-container i {
+  color: #f7fff7; }
+
+.footer-content-link {
+  margin: .5rem auto; }
+
+.footer-content-h2 {
+  font-family: 'Crushed', cursive;
+  font-weight: 400; }
+
+.footer-break {
+  display: block;
+  color: #f7fff7;
+  border-style: inset;
+  border-width: 1px;
+  width: 50%;
+  margin: .25rem auto; }
+
+.footer-logo {
+  width: 30px;
+  margin: .5rem auto; }
 
