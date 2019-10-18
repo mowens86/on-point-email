@@ -411,7 +411,7 @@ header {
 .footer-content-h2,
 .footer-content-h4,
 .footer-content-link,
-.footer-container i {
+.fas {
     color: $themeWhite;
 }
 
@@ -436,4 +436,28 @@ header {
 .footer-logo {
     width: 30px;
     margin: .5rem auto;
+}
+
+.footer-content-social {
+    margin-top: .5rem;
+}
+
+.footer-icon-link {
+    display: inline-block;
+}
+
+.icon-color {
+    color: $themeRed;
+    transition: .5s all ease-in-out;
+}
+
+.icon-color:hover {
+    color: $themeLightAqua;
+    
+}
+
+.footer-copyright {
+    padding-top: .5rem;
+    text-align: center;
+    color: $themeWhite;
 }

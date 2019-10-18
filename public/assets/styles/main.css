@@ -1000,7 +1000,7 @@ header {
 .footer-content-h2,
 .footer-content-h4,
 .footer-content-link,
-.footer-container i {
+.fas {
   color: #f7fff7; }
 
 .footer-content-link {
@@ -1021,4 +1021,22 @@ header {
 .footer-logo {
   width: 30px;
   margin: .5rem auto; }
+
+.footer-content-social {
+  margin-top: .5rem; }
+
+.footer-icon-link {
+  display: inline-block; }
+
+.icon-color {
+  color: #ff6b6b;
+  transition: .5s all ease-in-out; }
+
+.icon-color:hover {
+  color: #4ecdc4; }
+
+.footer-copyright {
+  padding-top: .5rem;
+  text-align: center;
+  color: #f7fff7; }
 
