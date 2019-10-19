@@ -89,6 +89,7 @@ header {
     color: $themeWhite;
     font-size: 1.25rem;
     padding: 5px 0;
+    border-radius: 3px;
     transition: 0.3s ease-in-out;
 }
 
@@ -139,7 +140,7 @@ header {
 .meet-content-h3,
 .meet-content-p,
 .quote-content-p {
-    color:$fontGray;
+    color: $fontGray;
 }
 
 // Dividers
@@ -147,17 +148,14 @@ header {
 .rocket,
 .divider,
 .divider-2 {
+    display: block;
     width: 95%;
     z-index: 5;
+    padding: 0 10%;
+    margin: 0 auto;
 }
 
-.divider {
-    margin-bottom: -2%;
-}
 
-.divider-2 {
-    margin-top: -2%;
-}
 
 // Hero Section
 .hero-content-h1, 
@@ -460,4 +458,49 @@ header {
     padding-top: .5rem;
     text-align: center;
     color: $themeWhite;
+}
+
+@media screen and (min-width: 600px) {
+    .hero-container,
+    .what-container,
+    .choose-container,
+    .meet-container,
+    .testimonial-container,
+    .quote-container,
+    .footer-container {
+        padding: 3% 30%;
+    }
+
+    .hamburger-container {
+        display: none;
+    }
+
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .nav-logo {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .nav-logo img {
+        width: 35px;
+        margin: 0 .5rem;
+    }
+
+    .nav-flex-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+
+    .nav-link {
+        padding: .5rem 1rem;
+    }
+
+
 }
