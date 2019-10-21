@@ -817,7 +817,9 @@ header {
 .hero-content-p {
   padding-top: 1rem; }
 
-.hero-logo {
+.hero-logo,
+.hero-spaceman,
+.hero-spacemail {
   display: none; }
 
 .hero-mobile {
@@ -1046,7 +1048,7 @@ header {
   .testimonial-container,
   .quote-container,
   .footer-container {
-    padding: 3% 30%; }
+    padding: 3% 15%; }
   .hamburger-container {
     display: none; }
   .main-nav {
@@ -1055,7 +1057,8 @@ header {
     justify-content: space-around; }
   .nav-logo {
     flex-direction: row;
-    justify-content: center; }
+    justify-content: center;
+    padding-top: .25rem; }
   .nav-logo img {
     width: 35px;
     margin: 0 .5rem; }
@@ -1063,5 +1066,90 @@ header {
     flex-direction: row;
     justify-content: center; }
   .nav-link {
-    padding: .5rem 1rem; } }
+    padding: .75rem 1rem;
+    font-size: 1rem; }
+  .logo-link {
+    font-size: 1.5rem;
+    padding-top: .25rem; } }
+
+@media screen and (min-width: 768px) {
+  .hero-container,
+  .what-container,
+  .choose-container,
+  .meet-container,
+  .testimonial-container,
+  .quote-container,
+  .footer-container {
+    padding: 3% 5%; }
+  .hero-mobile {
+    display: none; }
+  .hero-spacemail,
+  .hero-spaceman {
+    display: inline;
+    position: absolute;
+    bottom: 35%; }
+  .hero-spacemail {
+    left: 12%;
+    width: 14%; }
+  .hero-spaceman {
+    right: 12%;
+    width: 14%; }
+  .hero-content {
+    background-image: url(../img/Hero_Background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 300px;
+    padding-top: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 18rem;
+    position: relative; }
+  .hero-content-h1 {
+    padding: 0 15%; }
+  .hero-content-p {
+    padding: 1% 13%; }
+  .btn {
+    margin: .5rem;
+    padding: .75rem 1rem; } }
+
+@media screen and (min-width: 980px) {
+  .hero-content-h1 {
+    padding: 0 15%; }
+  .hero-content-p {
+    padding: 1% 20%; }
+  .hero-spacemail,
+  .hero-spaceman {
+    bottom: 15%; }
+  .hero-spacemail {
+    left: 15%;
+    width: 14%; }
+  .hero-spaceman {
+    right: 15%;
+    width: 14%; } }
+
+@media screen and (min-width: 1061px) {
+  .hero-content-h1 {
+    padding: 2% 15%; } }
+
+@media screen and (min-width: 1238px) {
+  .hero-content {
+    background-size: contain;
+    height: 60vh; }
+  .hero-logo {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    padding-top: 5%; }
+  .hero-content-h1 {
+    padding: 0 15%;
+    padding-top: 1rem; }
+  .hero-content-p {
+    padding: 1% 35%; }
+  .hero-spacemail {
+    left: 15%;
+    width: 18%; }
+  .hero-spaceman {
+    right: 15%;
+    width: 18%; } }
 
