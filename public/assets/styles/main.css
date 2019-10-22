@@ -725,8 +725,16 @@ ul {
 header {
   background: #ff914d; }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #ff914d;
+  opacity: .95; }
+
 .main-nav, .hero-section {
-  padding: 1rem;
+  padding: .5rem;
   text-align: center; }
 
 .nav-logo {
@@ -734,13 +742,25 @@ header {
   flex-direction: column; }
 
 .nav-logo img {
-  width: 50px; }
+  width: 25px; }
 
 .logo-link {
   color: #f7fff7;
   text-transform: uppercase;
   font-family: 'Crushed', cursive;
-  font-size: 2rem; }
+  font-size: 1.2rem; }
+
+.hamburger {
+  padding: .5rem; }
+
+.hamburger-inner::before,
+.hamburger-inner,
+.hamburger-inner::after {
+  width: 30px; }
+
+.hamburger-box {
+  width: 30px;
+  height: 18px; }
 
 .nav-flex-container {
   display: none;
@@ -752,7 +772,7 @@ header {
 
 .nav-link {
   color: #f7fff7;
-  font-size: 1.25rem;
+  font-size: 1rem;
   padding: 5px 0;
   border-radius: 3px;
   transition: 0.3s ease-in-out; }
@@ -823,6 +843,7 @@ header {
   display: none; }
 
 .hero-mobile {
+  padding-top: 6rem;
   width: 80%; }
 
 .btn-flex {
@@ -1081,6 +1102,12 @@ header {
   .quote-container,
   .footer-container {
     padding: 3% 5%; }
+  .what-content-h3,
+  .choose-content-h3,
+  .meet-content-p,
+  .testimonial-content-p,
+  .quote-content-p {
+    padding: 1% 20%; }
   .hero-mobile {
     display: none; }
   .hero-spacemail,
@@ -1111,7 +1138,38 @@ header {
     padding: 1% 13%; }
   .btn {
     margin: .5rem;
-    padding: .75rem 1rem; } }
+    padding: .75rem 1rem; }
+  .what-content-h2 {
+    margin-top: -1.1rem;
+    font-size: 1rem; }
+  .what-content-p {
+    margin: 1% 20%;
+    font-size: .8rem; }
+  .jobs-flex {
+    flex-direction: row; }
+  .jobs-box {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    margin: 20px auto;
+    border-radius: 50% / 10%;
+    color: #f7fff7;
+    text-align: center;
+    text-indent: .1em;
+    z-index: -1; }
+  .jobs-box:before {
+    content: '';
+    position: absolute;
+    top: 9%;
+    bottom: 9%;
+    right: -5%;
+    left: -5%;
+    background: inherit;
+    border-radius: 5% / 50%;
+    z-index: -1; }
+  .jobs-img {
+    margin-top: 1rem;
+    width: 100px; } }
 
 @media screen and (min-width: 980px) {
   .hero-content-h1 {
@@ -1151,5 +1209,7 @@ header {
     width: 18%; }
   .hero-spaceman {
     right: 15%;
-    width: 18%; } }
+    width: 18%; }
+  .btn {
+    padding: 1rem 2rem; } }
 
