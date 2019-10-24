@@ -205,7 +205,6 @@ header {
 }
 
 .hero-mobile {
-    padding-top: 6rem;
     width: 80%;
 }
 
@@ -564,7 +563,7 @@ header {
     }
 
 
-    // Hero Section
+    // Hero Section 768px
 
     .hero-mobile {
         display: none;
@@ -659,6 +658,31 @@ header {
         margin-top: 1rem;
         width: 100px;
     }
+
+    // Quote Section 768px
+    .quote-form {
+        padding: 1% 20%;
+        margin-top: 1rem;
+    }
+
+    .form-inputs {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .input-1, 
+    .input-2,
+    .textarea-1  {
+        margin: .25rem;
+    }
+
+    .textarea-1 {
+        width: 98.7%;
+    }
+
+    
+
 }
 
 @media screen and (min-width: 980px) {
@@ -685,7 +709,7 @@ header {
         right: 15%;
         width: 14%;
     }
-    
+
 }
 
 @media screen and (min-width: 1061px) {

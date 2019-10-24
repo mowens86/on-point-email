@@ -16,7 +16,7 @@ const sticky = fullnav.offsetTop;
 stickyNavigation = () => {
 
   // Is windows y-axis offset greater than or equal to navbar: true = add sticky class, false = remove sticky class 
-  window.pageYOffset >= sticky ? fullnav.classList.add("sticky") : fullnav.classList.remove("sticky");
+  window.pageYOffset > sticky ? fullnav.classList.add("sticky") : fullnav.classList.remove("sticky");
 
 };
 
