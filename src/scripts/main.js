@@ -52,12 +52,11 @@ function checkForViewportChange () {
 window.setInterval(checkForViewportChange, 150);
 
 // Check to see if top is 0 if so remove sticky navbar to reset padding
-console.log(document.body.scrollTop);
 let topState = false;
 function checkForTopOfPage () {
   const topOfPage = document.body.scrollTop;
   if (topOfPage === 0) {
   return fullnav.classList.remove("sticky");
-}
+  }
 }
 

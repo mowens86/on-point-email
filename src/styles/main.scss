@@ -5,7 +5,7 @@
 // 2a. Imports
 // 3a. Universal Styles
 // 4a. Mobile Responsive Styles
-// 
+//
 
 
 // 1a. Color Theme Variables
@@ -305,7 +305,7 @@ header {
 
 // What We Do
 
-.choose-container {
+.choose-section {
     background-color: $themeYellow;
 }
 
@@ -349,7 +349,8 @@ header {
 
 // Testimonial Section
 
-.testimonial-container {
+
+.testimonial-section {
     background-color: $themeRed;
     position: relative;
     z-index: -5;
@@ -419,7 +420,7 @@ header {
 
 // Footer Section
 
-.footer-container {
+.footer-section {
     background-color: $themeDarkAqua;
 }
 
@@ -659,6 +660,19 @@ header {
         width: 100px;
     }
 
+    // Testimonial Section 768px
+    .quote1 {
+        width: 5%;
+        left: 15%;
+        bottom: 60%;
+    }
+    
+    .quote2 {
+        width: 5%;
+        right: 15%;
+        bottom: 15%;
+    }
+
     // Quote Section 768px
     .quote-form {
         padding: 1% 20%;
@@ -710,6 +724,35 @@ header {
         width: 14%;
     }
 
+    .jobs-box {
+    position: relative;
+    width: 225px;
+    height: 275px;
+    margin: 20px auto;
+    border-radius: 50% / 10%;
+    color: $themeWhite;
+    text-align: center;
+    text-indent: .1em;
+    z-index: -1;
+  }
+
+  .jobs-box:before {
+    content: '';
+    position: absolute;
+    top: 9%;
+    bottom: 9%;
+    right: -5%;
+    left: -5%;
+    background: inherit;
+    border-radius: 5% / 50%;
+    z-index: -1;
+  }
+
+.jobs-img {
+    margin-top: 1rem;
+    width: 150px;
+}
+
 }
 
 @media screen and (min-width: 1061px) {
@@ -720,6 +763,20 @@ header {
 
 @media screen and (min-width: 1238px) {
     
+    .hero-container,
+    .what-container,
+    .choose-container,
+    .meet-container,
+    .testimonial-container,
+    .quote-container,
+    .footer-container,
+    .rocket,
+.divider,
+.divider-2 {
+        max-width: 1368px;
+        margin: 0 auto;
+    }
+
     .hero-content {
         background-size: contain;
         height: 60vh;
@@ -753,5 +810,46 @@ header {
 
     .btn {
         padding: 1rem 2rem;
+    }
+
+    // Testimonial Section 1238px
+    .quote1 {
+        width: 60px;
+        left: 15%;
+        bottom: 60%;
+    }
+    
+    .quote2 {
+        width: 60px;
+        right: 15%;
+        bottom: 15%;
+    }
+}
+
+@media screen and (min-width: 1660px) {
+    .quote1 {
+        width: 60px;
+        left: 25%;
+        bottom: 60%;
+    }
+    
+    .quote2 {
+        width: 60px;
+        right: 25%;
+        bottom: 15%;
+    }
+}
+
+@media screen and (min-width: 2440px) {
+    .quote1 {
+        width: 60px;
+        left: 32%;
+        bottom: 60%;
+    }
+    
+    .quote2 {
+        width: 60px;
+        right: 32%;
+        bottom: 15%;
     }
 }

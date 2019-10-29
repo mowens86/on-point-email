@@ -920,7 +920,7 @@ header {
   margin-top: 1rem;
   width: 200px; }
 
-.choose-container {
+.choose-section {
   background-color: #ffe66d; }
 
 .choose-flex {
@@ -951,7 +951,7 @@ header {
   background-color: #4ecdc4;
   color: #404040; }
 
-.testimonial-container {
+.testimonial-section {
   background-color: #ff6b6b;
   position: relative;
   z-index: -5; }
@@ -1005,7 +1005,7 @@ header {
   font-weight: 800;
   cursor: pointer; }
 
-.footer-container {
+.footer-section {
   background-color: #1a535c; }
 
 .display-none {
@@ -1169,6 +1169,14 @@ header {
   .jobs-img {
     margin-top: 1rem;
     width: 100px; }
+  .quote1 {
+    width: 5%;
+    left: 15%;
+    bottom: 60%; }
+  .quote2 {
+    width: 5%;
+    right: 15%;
+    bottom: 15%; }
   .quote-form {
     padding: 1% 20%;
     margin-top: 1rem; }
@@ -1195,13 +1203,48 @@ header {
     width: 14%; }
   .hero-spaceman {
     right: 15%;
-    width: 14%; } }
+    width: 14%; }
+  .jobs-box {
+    position: relative;
+    width: 225px;
+    height: 275px;
+    margin: 20px auto;
+    border-radius: 50% / 10%;
+    color: #f7fff7;
+    text-align: center;
+    text-indent: .1em;
+    z-index: -1; }
+  .jobs-box:before {
+    content: '';
+    position: absolute;
+    top: 9%;
+    bottom: 9%;
+    right: -5%;
+    left: -5%;
+    background: inherit;
+    border-radius: 5% / 50%;
+    z-index: -1; }
+  .jobs-img {
+    margin-top: 1rem;
+    width: 150px; } }
 
 @media screen and (min-width: 1061px) {
   .hero-content-h1 {
     padding: 2% 15%; } }
 
 @media screen and (min-width: 1238px) {
+  .hero-container,
+  .what-container,
+  .choose-container,
+  .meet-container,
+  .testimonial-container,
+  .quote-container,
+  .footer-container,
+  .rocket,
+  .divider,
+  .divider-2 {
+    max-width: 1368px;
+    margin: 0 auto; }
   .hero-content {
     background-size: contain;
     height: 60vh; }
@@ -1222,5 +1265,33 @@ header {
     right: 15%;
     width: 18%; }
   .btn {
-    padding: 1rem 2rem; } }
+    padding: 1rem 2rem; }
+  .quote1 {
+    width: 60px;
+    left: 15%;
+    bottom: 60%; }
+  .quote2 {
+    width: 60px;
+    right: 15%;
+    bottom: 15%; } }
+
+@media screen and (min-width: 1660px) {
+  .quote1 {
+    width: 60px;
+    left: 25%;
+    bottom: 60%; }
+  .quote2 {
+    width: 60px;
+    right: 25%;
+    bottom: 15%; } }
+
+@media screen and (min-width: 2440px) {
+  .quote1 {
+    width: 60px;
+    left: 32%;
+    bottom: 60%; }
+  .quote2 {
+    width: 60px;
+    right: 32%;
+    bottom: 15%; } }
 
