@@ -179,7 +179,13 @@ header {
     margin: 0 auto;
 }
 
+.divider {
+    margin-bottom: -10px;
+}
 
+.divider-2 {
+    margin-top: -10px;
+}
 
 // Hero Section
 
@@ -759,6 +765,14 @@ header {
     .hero-content-h1 {
         padding: 2% 15%;
     }
+
+    .divider {
+        margin-bottom: -15px;
+    }
+    
+    .divider-2 {
+        margin-top: -15px;
+    }
 }
 
 @media screen and (min-width: 1238px) {
@@ -771,10 +785,18 @@ header {
     .quote-container,
     .footer-container,
     .rocket,
-.divider,
-.divider-2 {
+    .divider,
+    .divider-2 {
         max-width: 1368px;
         margin: 0 auto;
+    }
+
+    .divider {
+        margin-bottom: -15px;
+    }
+    
+    .divider-2 {
+        margin-top: -15px;
     }
 
     .hero-content {

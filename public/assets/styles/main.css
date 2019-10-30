@@ -826,6 +826,12 @@ header {
   padding: 0 10%;
   margin: 0 auto; }
 
+.divider {
+  margin-bottom: -10px; }
+
+.divider-2 {
+  margin-top: -10px; }
+
 .hero-content-h1,
 .hero-content-p {
   margin: 0 3rem; }
@@ -1230,7 +1236,11 @@ header {
 
 @media screen and (min-width: 1061px) {
   .hero-content-h1 {
-    padding: 2% 15%; } }
+    padding: 2% 15%; }
+  .divider {
+    margin-bottom: -15px; }
+  .divider-2 {
+    margin-top: -15px; } }
 
 @media screen and (min-width: 1238px) {
   .hero-container,
@@ -1245,6 +1255,10 @@ header {
   .divider-2 {
     max-width: 1368px;
     margin: 0 auto; }
+  .divider {
+    margin-bottom: -15px; }
+  .divider-2 {
+    margin-top: -15px; }
   .hero-content {
     background-size: contain;
     height: 60vh; }
