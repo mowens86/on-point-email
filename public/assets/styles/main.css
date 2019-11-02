@@ -1051,6 +1051,17 @@ header {
 .footer-content-social {
   margin-top: .5rem; }
 
+.fa-facebook,
+.fa-twitter,
+.fa-linkedin {
+  width: 10px;
+  padding-left: .4rem; }
+
+.fa-square {
+  width: 25px;
+  padding: 0;
+  margin: 0; }
+
 .footer-icon-link {
   display: inline-block; }
 
@@ -1194,11 +1205,37 @@ header {
   .textarea-1 {
     margin: .25rem; }
   .textarea-1 {
-    width: 98.7%; } }
+    width: 98.7%; }
+  .display-none {
+    display: flex;
+    flex-direction: column;
+    text-align: left; }
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between; }
+  .footer-content-link {
+    padding: 0;
+    margin: 0; }
+  .footer-logo-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: left; }
+  .footer-content-h2 {
+    padding-top: .1rem;
+    padding-left: .25rem; }
+  .footer-logo-img {
+    width: 30px; }
+  .footer-break {
+    margin: .5rem 0; }
+  .footer-copyright {
+    padding-top: 2rem; } }
 
 @media screen and (min-width: 980px) {
   .hero-content-h1 {
-    padding: 0 15%; }
+    padding: 0 15%;
+    padding-top: 2rem; }
   .hero-content-p {
     padding: 1% 20%; }
   .hero-spacemail,
@@ -1235,8 +1272,6 @@ header {
     width: 150px; } }
 
 @media screen and (min-width: 1061px) {
-  .hero-content-h1 {
-    padding: 2% 15%; }
   .divider {
     margin-bottom: -15px; }
   .divider-2 {
@@ -1261,7 +1296,7 @@ header {
     margin-top: -15px; }
   .hero-content {
     background-size: contain;
-    height: 60vh; }
+    height: 30rem; }
   .hero-logo {
     display: block;
     margin: 0 auto;
@@ -1271,15 +1306,45 @@ header {
     padding: 0 15%;
     padding-top: 1rem; }
   .hero-content-p {
-    padding: 1% 35%; }
+    padding: 1% 25%; }
+  .hero-spacemail,
+  .hero-spaceman {
+    bottom: 5%; }
   .hero-spacemail {
-    left: 15%;
+    left: 10%;
     width: 18%; }
   .hero-spaceman {
-    right: 15%;
+    right: 10%;
     width: 18%; }
   .btn {
     padding: 1rem 2rem; }
+  .what-content-h2 {
+    font-size: 1.5rem; }
+  .what-content-p {
+    font-size: 1rem; }
+  .jobs-box {
+    position: relative;
+    width: 300px;
+    height: 375px;
+    margin: 20px auto;
+    border-radius: 50% / 10%;
+    color: #f7fff7;
+    text-align: center;
+    text-indent: .1em;
+    z-index: -1; }
+  .jobs-box:before {
+    content: '';
+    position: absolute;
+    top: 9%;
+    bottom: 9%;
+    right: -5%;
+    left: -5%;
+    background: inherit;
+    border-radius: 5% / 50%;
+    z-index: -1; }
+  .jobs-img {
+    margin-top: 1rem;
+    width: 200px; }
   .quote1 {
     width: 60px;
     left: 15%;
@@ -1300,6 +1365,8 @@ header {
     bottom: 15%; } }
 
 @media screen and (min-width: 2440px) {
+  .hero-content-p {
+    padding: 1% 25%; }
   .quote1 {
     width: 60px;
     left: 32%;
