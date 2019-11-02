@@ -389,7 +389,8 @@ header {
 
 // Quote Section
 
-.quote-form-color {
+.quote-form-color,
+.newsletter-form-color {
     border-radius: 5px;
     padding: .5rem;
     background-color: #b2fffa;
@@ -753,6 +754,19 @@ header {
 
     .footer-copyright {
         padding-top: 2rem;
+    }
+
+    .newsletter-form {
+        padding-top: .25rem;
+    }
+
+    .form-inputs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .newsletter-form-color {
+        padding: .3rem .5rem;
     }
 
 }

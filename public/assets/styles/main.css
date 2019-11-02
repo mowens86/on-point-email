@@ -983,7 +983,8 @@ header {
   padding-top: .5rem;
   font-weight: 400; }
 
-.quote-form-color {
+.quote-form-color,
+.newsletter-form-color {
   border-radius: 5px;
   padding: .5rem;
   background-color: #b2fffa;
@@ -1230,7 +1231,14 @@ header {
   .footer-break {
     margin: .5rem 0; }
   .footer-copyright {
-    padding-top: 2rem; } }
+    padding-top: 2rem; }
+  .newsletter-form {
+    padding-top: .25rem; }
+  .form-inputs {
+    display: flex;
+    flex-direction: column; }
+  .newsletter-form-color {
+    padding: .3rem .5rem; } }
 
 @media screen and (min-width: 980px) {
   .hero-content-h1 {
