@@ -398,7 +398,8 @@ header {
     font-size: .9rem;
 }
 
-.quote-form-color:focus {
+.quote-form-color:focus,
+.newsletter-form-color:focus {
     border-color: $themeRed;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -728,6 +729,10 @@ header {
         justify-content: space-between;
     }
 
+    .footer-content-flexbox {
+        justify-content: flex-start;
+    }
+
     .footer-content-link {
         padding: 0;
         margin: 0;
@@ -760,7 +765,7 @@ header {
         padding-top: .25rem;
     }
 
-    .form-inputs {
+    .form-inputs-footer {
         display: flex;
         flex-direction: column;
     }
