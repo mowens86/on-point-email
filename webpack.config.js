@@ -15,7 +15,7 @@ module.exports = {
   // This is where we define the path where Webpack will place
   // the bundled JS file
   output: {
-    path: path.resolve(__dirname, 'docs'),
+    path: path.resolve(__dirname, 'public'),
     // Specify the base path for all the assets within your
     // application. This is relative to the output path, so in
     // our case it will be ./public/assets
