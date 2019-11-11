@@ -950,10 +950,14 @@ header {
 
 .meet-content-pic {
   width: 150px;
-  border-radius: 50%; }
+  border-radius: 50%;
+  box-shadow: 5px 5px 8px #888; }
 
 .meet-content-h3 {
   padding: .5rem 0; }
+
+.meet-content-h4 {
+  color: #1a535c; }
 
 .dark-aqua {
   background-color: #1a535c;
@@ -974,7 +978,8 @@ header {
   opacity: 0;
   visibility: hidden;
   transform: scale(1.1);
-  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s; }
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  z-index: 150; }
 
 .modal-content {
   position: absolute;
@@ -982,9 +987,9 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
-  padding: 1rem 1.5rem;
-  width: 24rem;
-  border-radius: 0.5rem; }
+  padding: 2rem 1.5rem;
+  width: 50%;
+  border-radius: 8px; }
 
 .close-button {
   float: right;
@@ -1040,7 +1045,7 @@ header {
 .slideshow-container {
   position: relative;
   background: #ff6b6b;
-  height: 175px; }
+  height: 185px; }
 
 /* Slides */
 .mySlide {
