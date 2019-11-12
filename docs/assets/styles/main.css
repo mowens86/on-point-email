@@ -780,12 +780,6 @@ header {
 .nav-link:hover {
   background: #ff6b6b; }
 
-/*
-.dropdown-services {
-    position: relative;
-    display: inline-block;
-  }
-  */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -1079,8 +1073,7 @@ header {
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  background: #ff6b6b;
-  height: 185px; }
+  background: #ff6b6b; }
 
 /* Slides */
 .mySlide {
