@@ -733,7 +733,8 @@ header {
   background-color: #ff914d;
   opacity: .95; }
 
-.main-nav, .hero-section {
+.main-nav,
+.hero-section {
   padding: .5rem;
   text-align: center; }
 
@@ -1410,6 +1411,12 @@ header {
     margin-top: -15px; } }
 
 @media screen and (min-width: 1238px) {
+  h1 {
+    font-size: 38px; }
+  h2 {
+    font-size: 28px; }
+  h3 {
+    font-size: 20px; }
   .hero-container,
   .what-container,
   .choose-container,
@@ -1507,4 +1514,26 @@ header {
     width: 60px;
     right: 32%;
     bottom: 15%; } }
+
+.portfolio-hero-section {
+  padding: .5rem;
+  text-align: center; }
+
+.portfolio-hero-container,
+.portfolio-work-container {
+  padding: 8% 10%; }
+
+.portfolio-hero-content-h1 {
+  color: #1a535c; }
+
+.portfolio-hero-content-p {
+  color: #404040; }
+
+.portfolio-work-grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto; }
+
+.product {
+  justify-self: center; }
 
