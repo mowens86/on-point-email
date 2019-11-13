@@ -287,7 +287,7 @@ header {
 
 
 .what-content-p {
-    margin: 1% 25%;
+    margin: 1% 15%;
 }
 
 .jobs-flex {
@@ -310,8 +310,8 @@ header {
 
 .jobs-box {
     position: relative;
-    width: 300px;
-    height: 350px;
+    width: 250px;
+    height: 300px;
     margin: 20px auto;
     border-radius: 50% / 10%;
     color: $themeWhite;
@@ -335,7 +335,7 @@ header {
 
 .jobs-img {
     margin-top: 1rem;
-    width: 200px;
+    width: 150px;
 }
 
 // What We Do
@@ -359,6 +359,8 @@ header {
 .choose-content-p {
     padding: .5rem 0;
 }
+
+
 
 .reason {
     display: inline-block;
@@ -748,7 +750,7 @@ header {
 
 
     .hero-content {
-        background-image: url(../../public/assets/img/Hero_Background.png);
+        background-image: url(../../docs/assets/img/Hero_Background.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position-x: center;

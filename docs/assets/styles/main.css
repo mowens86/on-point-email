@@ -911,7 +911,7 @@ header {
   margin-top: -1.5rem; }
 
 .what-content-p {
-  margin: 1% 25%; }
+  margin: 1% 15%; }
 
 .jobs-flex {
   display: flex;
@@ -929,8 +929,8 @@ header {
 
 .jobs-box {
   position: relative;
-  width: 300px;
-  height: 350px;
+  width: 250px;
+  height: 300px;
   margin: 20px auto;
   border-radius: 50% / 10%;
   color: #f7fff7;
@@ -952,7 +952,7 @@ header {
 
 .jobs-img {
   margin-top: 1rem;
-  width: 200px; }
+  width: 150px; }
 
 .choose-section {
   background-color: #ffe66d; }
