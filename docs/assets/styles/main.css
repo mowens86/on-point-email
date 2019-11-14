@@ -1356,7 +1356,8 @@ header {
     padding-top: .1rem;
     padding-left: .25rem; }
   .footer-logo-img {
-    width: 30px; }
+    width: 30px;
+    height: 30px; }
   .footer-break {
     margin: .5rem 0; }
   .footer-copyright {
@@ -1433,6 +1434,8 @@ header {
   .divider-2 {
     max-width: 1368px;
     margin: 0 auto; }
+  .nav-container {
+    max-width: 1368px; }
   .divider {
     margin-bottom: -15px; }
   .divider-2 {
