@@ -1174,6 +1174,36 @@ header {
     }
 }
 
+////////// 6a. Services - Email Templates mobile-first responsive styles ////////////
+.template-process-section {
+    background: $themeBrown;
+}
+
+.template-process-h1,
+.template-process-h2 {
+    color: $fontGray;
+}
+
+.template-process-h1 {
+    margin: 0;
+    padding-bottom: .75rem;
+}
+
+.template-process-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.template-process-item {
+    padding: .75rem;
+}
+
+.template-process-item-img {
+    width: 200px;
+    height: 200px;
+    padding: 1rem 0;
+}
 
 
 ////////// 12a. Porfolio mobile-first responsive styles  ////////////
@@ -1187,28 +1217,35 @@ header {
 
 
 
-// Portfolio Hero Section
-.portfolio-hero-section {
+// Portfolio/Template Hero Section
+.portfolio-hero-section,
+.template-hero-section,
+.template-process-section {
     padding: .5rem;
     text-align: center;
 }
 
 .portfolio-hero-container,
-.portfolio-work-container {
+.portfolio-work-container,
+.template-hero-container,
+.template-process-container {
     padding: 8% 10%;
 }
 
-.portfolio-hero-img {
+.portfolio-hero-img,
+.template-hero-img {
     width: 100%;
     max-width: 300px;
 }
 
 .portfolio-hero-content-h1,
-.portfolio-quote-content-h1 {
+.portfolio-quote-content-h1,
+.template-hero-content-h1 {
     margin: .5rem 0;
 }
 
-.portfolio-hero-content-h1 {
+.portfolio-hero-content-h1,
+.template-hero-content-h1 {
     color: $themeDarkAqua;
 }
 
@@ -1301,7 +1338,8 @@ header {
 @media screen and (min-width: 600px) {
 
     .portfolio-hero-container,
-    .portfolio-work-container {
+    .portfolio-work-container,
+    .template-hero-container {
         padding: 3% 5%;
     }
 
@@ -1314,7 +1352,9 @@ header {
 
     .portfolio-hero-content-h1,
     .portfolio-hero-content-p,
-    .portfolio-quote-content-p {
+    .portfolio-quote-content-p,
+    .template-hero-content-h1,
+    .template-hero-content-p {
         padding: 0 20%;
     }
 }
@@ -1326,7 +1366,8 @@ header {
     }
 
     .portfolio-hero-content-p,
-    .portfolio-quote-content-p {
+    .portfolio-quote-content-p,
+    .template-hero-content-p {
         padding: 0 30%;
     }
 }
@@ -1334,7 +1375,8 @@ header {
 @media screen and (min-width: 1238px) {
     
     .portfolio-hero-container,
-    .portfolio-work-container {
+    .portfolio-work-container,
+    .template-hero-container {
         max-width: 1368px;
         margin: 0 auto;
     }

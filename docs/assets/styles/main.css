@@ -1522,28 +1522,59 @@ header {
     right: 32%;
     bottom: 15%; } }
 
+.template-process-section {
+  background: #FFD9C2; }
+
+.template-process-h1,
+.template-process-h2 {
+  color: #404040; }
+
+.template-process-h1 {
+  margin: 0;
+  padding-bottom: .75rem; }
+
+.template-process-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.template-process-item {
+  padding: .75rem; }
+
+.template-process-item-img {
+  width: 200px;
+  height: 200px;
+  padding: 1rem 0; }
+
 .portfolio-hero-content-p,
 .product-caption-p,
 .portfolio-quote-content-p {
   color: #404040; }
 
-.portfolio-hero-section {
+.portfolio-hero-section,
+.template-hero-section,
+.template-process-section {
   padding: .5rem;
   text-align: center; }
 
 .portfolio-hero-container,
-.portfolio-work-container {
+.portfolio-work-container,
+.template-hero-container,
+.template-process-container {
   padding: 8% 10%; }
 
-.portfolio-hero-img {
+.portfolio-hero-img,
+.template-hero-img {
   width: 100%;
   max-width: 300px; }
 
 .portfolio-hero-content-h1,
-.portfolio-quote-content-h1 {
+.portfolio-quote-content-h1,
+.template-hero-content-h1 {
   margin: .5rem 0; }
 
-.portfolio-hero-content-h1 {
+.portfolio-hero-content-h1,
+.template-hero-content-h1 {
   color: #1a535c; }
 
 .portfolio-quote-content-h1 {
@@ -1616,7 +1647,8 @@ header {
 
 @media screen and (min-width: 600px) {
   .portfolio-hero-container,
-  .portfolio-work-container {
+  .portfolio-work-container,
+  .template-hero-container {
     padding: 3% 5%; }
   .portfolio-work-grid {
     grid-template-columns: 50% 50%; } }
@@ -1624,19 +1656,23 @@ header {
 @media screen and (min-width: 768px) {
   .portfolio-hero-content-h1,
   .portfolio-hero-content-p,
-  .portfolio-quote-content-p {
+  .portfolio-quote-content-p,
+  .template-hero-content-h1,
+  .template-hero-content-p {
     padding: 0 20%; } }
 
 @media screen and (min-width: 980px) {
   .portfolio-work-grid {
     grid-template-columns: 33% 33% 33%; }
   .portfolio-hero-content-p,
-  .portfolio-quote-content-p {
+  .portfolio-quote-content-p,
+  .template-hero-content-p {
     padding: 0 30%; } }
 
 @media screen and (min-width: 1238px) {
   .portfolio-hero-container,
-  .portfolio-work-container {
+  .portfolio-work-container,
+  .template-hero-container {
     max-width: 1368px;
     margin: 0 auto; } }
 
