@@ -6,18 +6,22 @@
 // 3a. Universal Styles
 // 4a. Homepage mobile-first responsive styles
 // 5a. Homepage media queries
-// 6a. Services - Email Templates mobile-first responsive styles
-// 7a. Services - Email Templates media queries
-// 8a. Services - Email Strategy mobile-first responsive styles
-// 9a. Services - Email Strategy media queries
-// 10a. Services - ESP Integration mobile-first responsive styles
-// 11a. Services - ESP Integration media queries
-// 12a. Porfolio mobile-first responsive styles
-// 13a. Portfolio media queries
-// 14a. Pricing mobile-first responsive styles
-// 15a. Pricing media queries
-// 16a. How It Works mobile-first responsive styles
-// 17a. How It Works media queries
+
+////////// OTHER WEB PAGES ////////////
+// 6a. Sectional Styles For Pages
+// 7a. Media Queries For Additional Pages Multiples Sectional Styles
+// 8a. Services - Email Templates mobile-first responsive styles
+// 9a. Services - Email Templates media queries
+// 10a. Services - Email Strategy mobile-first responsive styles
+// 11a. Services - Email Strategy media queries
+// 12a. Services - ESP Integration mobile-first responsive styles
+// 13a. Services - ESP Integration media queries
+// 14a. Porfolio mobile-first responsive styles
+// 15a. Portfolio media queries
+// 16a. Pricing mobile-first responsive styles
+// 17a. Pricing media queries
+// 18a. How It Works mobile-first responsive styles
+// 19a. How It Works media queries
 
 
 // 1a. Color Theme Variables
@@ -1174,53 +1178,13 @@ header {
     }
 }
 
-////////// 6a. Services - Email Templates mobile-first responsive styles ////////////
-.template-process-section {
-    background: $themeBrown;
-}
+/////////// OTHER WEBPAGES //////////////
 
-.template-process-h1,
-.template-process-h2 {
-    color: $fontGray;
-}
+/////////////// 6a. Sectional Styles For Pages //////////////
 
-.template-process-h1 {
-    margin: 0;
-    padding-bottom: .75rem;
-}
-
-.template-process-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.template-process-item {
-    padding: .75rem;
-}
-
-.template-process-item-img {
-    width: 200px;
-    height: 200px;
-    padding: 1rem 0;
-}
-
-
-////////// 12a. Porfolio mobile-first responsive styles  ////////////
-
-// Multiple Sections
-.portfolio-hero-content-p,
-.product-caption-p,
-.portfolio-quote-content-p {
-    color: $fontGray;
-}
-
-
-
-// Portfolio/Template Hero Section
-.portfolio-hero-section,
 .template-hero-section,
-.template-process-section {
+.template-process-section,
+.portfolio-hero-section {
     padding: .5rem;
     text-align: center;
 }
@@ -1249,6 +1213,189 @@ header {
     color: $themeDarkAqua;
 }
 
+/////////// 7a. Media Queries For Additional Pages Multiples Sectional Styles ////////////
+
+@media screen and (min-width: 600px) {
+
+    .portfolio-hero-container,
+    .portfolio-work-container,
+    .template-hero-container,
+    .template-process-container {
+        padding: 3% 5%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .portfolio-hero-content-h1,
+    .portfolio-hero-content-p,
+    .portfolio-quote-content-p,
+    .template-hero-content-h1,
+    .template-hero-content-p {
+        padding: 0 20%;
+    }
+}
+
+@media screen and (min-width: 980px) {
+
+    .portfolio-hero-content-p,
+    .portfolio-quote-content-p,
+    .template-hero-content-p {
+        padding: 0 30%;
+    }
+}
+
+@media screen and (min-width: 1238px) {
+    
+    .portfolio-hero-container,
+    .portfolio-work-container,
+    .template-hero-container,
+    .template-process-container {
+        max-width: 1368px;
+        margin: 0 auto;
+    }
+}
+
+
+
+////////// 8a. Services - Email Templates mobile-first responsive styles ////////////
+.template-process-section {
+    background: $themeBrown;
+}
+
+.template-process-h1,
+.template-process-h2 {
+    color: $fontGray;
+}
+
+.template-process-h1 {
+    margin: 0;
+    padding-bottom: .75rem;
+}
+
+.template-process-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.template-process-item {
+    padding: .75rem;
+    text-align: center;
+    width: 100%;
+    border: 2px solid $themeOj;
+    border-radius: 3px;
+    background: $themeYellow;
+    margin: .5rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+    transition: all .1 ease;
+}
+
+.template-process-item-img {
+    width: 200px;
+    height: 200px;
+    padding: 1rem 0;
+}
+
+@-webkit-keyframes swing {
+    50% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@keyframes swing {
+    50% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.swing:hover
+{
+    -webkit-animation: swing .35s ease;
+    animation: swing .35s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+/////////// 9a. Services - Email Templates media queries ////////////
+
+@media screen and (min-width: 600px) {
+    .template-process-item-flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .template-process-item-p {
+        text-align: left;
+        padding: 2rem 1rem 1rem 1rem;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+    .template-process-flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .template-process-item {
+        width: 350px;
+        height: 250px;
+    }
+
+    .template-process-item-img {
+        width: 130px;
+        height: 130px;
+        margin: auto;
+    }
+
+    .template-process-item-p {
+        text-align: left;
+        padding: .5rem .75rem;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .template-process-item {
+        width: 400px;
+        height: 250px;
+    }
+
+    .template-process-item-img {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1238px) {
+    .template-process-item {
+        margin: 1.5rem;
+    }
+}
+
+////////// 14a. Porfolio mobile-first responsive styles  ////////////
+
+// Multiple Sections
+.portfolio-hero-content-p,
+.product-caption-p,
+.portfolio-quote-content-p {
+    color: $fontGray;
+}
+
+
+
+// Portfolio/Template Hero Section
 
 .portfolio-quote-content-h1 {
     color: $themeRed;
@@ -1333,29 +1480,11 @@ header {
     padding: .75rem 0;
 }
 
-////////// 13a. Portfolio media queries ////////////
-
+////////// 15a. Portfolio media queries ////////////
 @media screen and (min-width: 600px) {
-
-    .portfolio-hero-container,
-    .portfolio-work-container,
-    .template-hero-container {
-        padding: 3% 5%;
-    }
 
     .portfolio-work-grid {
         grid-template-columns: 50% 50%;
-    }
-}
-
-@media screen and (min-width: 768px) {
-
-    .portfolio-hero-content-h1,
-    .portfolio-hero-content-p,
-    .portfolio-quote-content-p,
-    .template-hero-content-h1,
-    .template-hero-content-p {
-        padding: 0 20%;
     }
 }
 
@@ -1364,20 +1493,5 @@ header {
     .portfolio-work-grid {
         grid-template-columns: 33% 33% 33%;
     }
-
-    .portfolio-hero-content-p,
-    .portfolio-quote-content-p,
-    .template-hero-content-p {
-        padding: 0 30%;
-    }
 }
 
-@media screen and (min-width: 1238px) {
-    
-    .portfolio-hero-container,
-    .portfolio-work-container,
-    .template-hero-container {
-        max-width: 1368px;
-        margin: 0 auto;
-    }
-}
