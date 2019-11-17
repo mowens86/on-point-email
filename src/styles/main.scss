@@ -53,8 +53,12 @@ html {
   }
 
 // Font - Fira 300,400,500,700
-h1, h2, h3, h4, h5, h6, p, a, span, div {
+h1, h2, h3, h4, h5, h6, p, a, span, div, input, textarea {
     font-family: 'Fira Sans', sans-serif;
+}
+
+p {
+    color: $fontGray;
 }
 
 a {
@@ -1184,7 +1188,9 @@ header {
 
 .template-hero-section,
 .template-process-section,
-.portfolio-hero-section {
+.portfolio-hero-section, 
+.strategy-hero-section,
+.strategy-process-section {
     padding: .5rem;
     text-align: center;
 }
@@ -1192,19 +1198,24 @@ header {
 .portfolio-hero-container,
 .portfolio-work-container,
 .template-hero-container,
-.template-process-container {
+.template-process-container,
+.strategy-hero-container, 
+.strategy-process-container {
     padding: 8% 10%;
 }
 
 .portfolio-hero-img,
-.template-hero-img {
+.template-hero-img,
+.strategy-hero-img {
     width: 100%;
     max-width: 300px;
 }
 
 .portfolio-hero-content-h1,
 .portfolio-quote-content-h1,
-.template-hero-content-h1 {
+.template-hero-content-h1,
+.strategy-hero-content-h1,
+.strategy-process-h1 {
     margin: .5rem 0;
 }
 
@@ -1382,6 +1393,78 @@ header {
     .template-process-item {
         margin: 1.5rem;
     }
+}
+
+/////////// 10a. Services - Email Strategy mobile-first responsive styles ////////////
+
+.strategy-process-section {
+    background: $themeRed;
+}
+
+.strategy-process-h1 {
+    color: $themeWhite;
+}
+
+.strategy-process-item {
+    background: $themeWhite;
+    padding: .75rem;
+    text-align: center;
+    width: 100%;
+    border: 2px solid $themeLightAqua;
+    border-radius: 3px;
+    margin: .5rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+    transition: all .1 ease;
+}
+
+.strategy-process-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.strategy-process-item-img {
+    width: 200px;
+    height: 200px;
+    padding: 1rem 0;
+}
+
+@-webkit-keyframes swing-2 {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    
+    50% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@keyframes swing-2 {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    
+    50% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.swing-2:hover
+{
+    -webkit-animation: swing-2 .35s ease;
+    animation: swing-2 .35s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
 }
 
 ////////// 14a. Porfolio mobile-first responsive styles  ////////////
