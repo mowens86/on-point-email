@@ -14,14 +14,12 @@
 // 9a. Services - Email Templates media queries
 // 10a. Services - Email Strategy mobile-first responsive styles
 // 11a. Services - Email Strategy media queries
-// 12a. Services - ESP Integration mobile-first responsive styles
-// 13a. Services - ESP Integration media queries
-// 14a. Porfolio mobile-first responsive styles
-// 15a. Portfolio media queries
-// 16a. Pricing mobile-first responsive styles
-// 17a. Pricing media queries
-// 18a. How It Works mobile-first responsive styles
-// 19a. How It Works media queries
+// 12a. Porfolio mobile-first responsive styles
+// 13a. Portfolio media queries
+// 14a. Pricing mobile-first responsive styles
+// 15a. Pricing media queries
+// 16a. How It Works mobile-first responsive styles
+// 17a. How It Works media queries
 
 
 // 1a. Color Theme Variables
@@ -1187,7 +1185,9 @@ header {
 .template-process-section,
 .portfolio-hero-section, 
 .strategy-hero-section,
-.strategy-process-section {
+.strategy-process-section,
+.pricing-hero-section,
+.pricing-process-section {
     padding: .5rem;
     text-align: center;
 }
@@ -1197,13 +1197,16 @@ header {
 .template-hero-container,
 .template-process-container,
 .strategy-hero-container, 
-.strategy-process-container {
+.strategy-process-container,
+.pricing-hero-container,
+.pricing-process-container {
     padding: 8% 10%;
 }
 
 .portfolio-hero-img,
 .template-hero-img,
-.strategy-hero-img {
+.strategy-hero-img,
+.pricing-hero-img {
     width: 100%;
     max-width: 300px;
 }
@@ -1212,13 +1215,15 @@ header {
 .portfolio-quote-content-h1,
 .template-hero-content-h1,
 .strategy-hero-content-h1,
-.strategy-process-h1 {
+.strategy-process-h1,
+.pricing-hero-content-h1 {
     margin: .5rem 0;
 }
 
 .portfolio-hero-content-h1,
 .template-hero-content-h1,
-.strategy-hero-content-h1 {
+.strategy-hero-content-h1,
+.pricing-hero-content-h1 {
     color: $themeDarkAqua;
 }
 
@@ -1231,7 +1236,9 @@ header {
     .template-hero-container,
     .template-process-container,
     .strategy-hero-container,
-    .strategy-process-container {
+    .strategy-process-container,
+    .pricing-hero-container,
+    .pricing-process-container {
         padding: 3% 5%;
     }
 }
@@ -1244,7 +1251,9 @@ header {
     .template-hero-content-h1,
     .template-hero-content-p,
     .strategy-hero-content-h1,
-    .strategy-hero-content-p  {
+    .strategy-hero-content-p,
+    .pricing-hero-content-h1,
+    .pricing-hero-content-p  {
         padding: 0 20%;
     }
 }
@@ -1254,7 +1263,8 @@ header {
     .portfolio-hero-content-p,
     .portfolio-quote-content-p,
     .template-hero-content-p,
-    .strategy-hero-content-p {
+    .strategy-hero-content-p,
+    .pricing-hero-content-p  {
         padding: 0 30%;
     }
 }
@@ -1266,7 +1276,9 @@ header {
     .template-hero-container,
     .template-process-container,
     .strategy-hero-container,
-    .strategy-process-container {
+    .strategy-process-container,
+    .pricing-hero-container,
+    .pricing-process-container {
         max-width: 1368px;
         margin: 0 auto;
     }
@@ -1546,7 +1558,7 @@ header {
 }
 
 
-////////// 14a. Porfolio mobile-first responsive styles  ////////////
+////////// 12a. Porfolio mobile-first responsive styles  ////////////
 
 // Multiple Sections
 .portfolio-hero-content-p,
@@ -1646,7 +1658,7 @@ header {
     padding: .75rem 0;
 }
 
-////////// 15a. Portfolio media queries ////////////
+////////// 13a. Portfolio media queries ////////////
 @media screen and (min-width: 600px) {
 
     .portfolio-work-grid {
@@ -1661,3 +1673,94 @@ header {
     }
 }
 
+///////////// 14a. Pricing mobile-first responsive styles ////////////
+
+.pricing-hero-content-p,
+.pricing-process-item-p,
+.pricing-checklist-content-p {
+    color: $fontGray;
+}
+
+.pricing-process-section {
+    background: $themeLightAqua;
+}
+
+.pricing-process-h2 {
+    color: $themeDarkAqua;
+}
+
+.pricing-process-item-p {
+    padding: .5rem 0;
+}
+
+.pricing-process-item {
+    background: $themeWhite;
+    padding: .75rem;
+    text-align: left;
+    width: 100%;
+    border: 2px solid $themeLightAqua;
+    border-radius: 3px;
+    margin: .5rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+    transition: all .1 ease;
+}
+
+.pricing-process-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-process-item-img {
+    width: 200px;
+    height: 200px;
+    padding: .5rem 0;
+}
+
+.pricing-checklist-content-p {
+    font-size: .85rem;
+    padding: .25rem 0;
+}
+
+.pricing-checkmark {
+    width: 15px;
+}
+
+.pricing-process-item-inner-flex {
+    display: flex;
+    flex-direction: row;
+    padding-top: .5rem; 
+}
+
+.inner-flex-links {
+    display: flex;
+    flex-direction: column;
+    background: $themeDarkAqua;
+    border-radius: 3px;
+    width: 50%;
+    text-align: center;
+}
+
+.inner-flex-link {
+    color: $themeLightAqua;
+    padding: .65rem;
+    transition: .2s all ease-in-out;
+    font-weight: bold;
+}
+
+.inner-flex-link:hover {
+    color: $themeWhite;
+    background: $themeOj;
+    border-radius: 3px;
+}
+
+.inner-flex-img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .pricing-process-flex {
+        flex-direction: row;
+    }
+}

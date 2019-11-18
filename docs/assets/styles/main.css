@@ -1527,7 +1527,9 @@ header {
 .template-process-section,
 .portfolio-hero-section,
 .strategy-hero-section,
-.strategy-process-section {
+.strategy-process-section,
+.pricing-hero-section,
+.pricing-process-section {
   padding: .5rem;
   text-align: center; }
 
@@ -1536,12 +1538,15 @@ header {
 .template-hero-container,
 .template-process-container,
 .strategy-hero-container,
-.strategy-process-container {
+.strategy-process-container,
+.pricing-hero-container,
+.pricing-process-container {
   padding: 8% 10%; }
 
 .portfolio-hero-img,
 .template-hero-img,
-.strategy-hero-img {
+.strategy-hero-img,
+.pricing-hero-img {
   width: 100%;
   max-width: 300px; }
 
@@ -1549,12 +1554,14 @@ header {
 .portfolio-quote-content-h1,
 .template-hero-content-h1,
 .strategy-hero-content-h1,
-.strategy-process-h1 {
+.strategy-process-h1,
+.pricing-hero-content-h1 {
   margin: .5rem 0; }
 
 .portfolio-hero-content-h1,
 .template-hero-content-h1,
-.strategy-hero-content-h1 {
+.strategy-hero-content-h1,
+.pricing-hero-content-h1 {
   color: #1a535c; }
 
 @media screen and (min-width: 600px) {
@@ -1563,7 +1570,9 @@ header {
   .template-hero-container,
   .template-process-container,
   .strategy-hero-container,
-  .strategy-process-container {
+  .strategy-process-container,
+  .pricing-hero-container,
+  .pricing-process-container {
     padding: 3% 5%; } }
 
 @media screen and (min-width: 768px) {
@@ -1573,14 +1582,17 @@ header {
   .template-hero-content-h1,
   .template-hero-content-p,
   .strategy-hero-content-h1,
-  .strategy-hero-content-p {
+  .strategy-hero-content-p,
+  .pricing-hero-content-h1,
+  .pricing-hero-content-p {
     padding: 0 20%; } }
 
 @media screen and (min-width: 980px) {
   .portfolio-hero-content-p,
   .portfolio-quote-content-p,
   .template-hero-content-p,
-  .strategy-hero-content-p {
+  .strategy-hero-content-p,
+  .pricing-hero-content-p {
     padding: 0 30%; } }
 
 @media screen and (min-width: 1238px) {
@@ -1589,7 +1601,9 @@ header {
   .template-hero-container,
   .template-process-container,
   .strategy-hero-container,
-  .strategy-process-container {
+  .strategy-process-container,
+  .pricing-hero-container,
+  .pricing-process-container {
     max-width: 1368px;
     margin: 0 auto; } }
 
@@ -1868,4 +1882,78 @@ header {
 @media screen and (min-width: 980px) {
   .portfolio-work-grid {
     grid-template-columns: 33% 33% 33%; } }
+
+.pricing-hero-content-p,
+.pricing-process-item-p,
+.pricing-checklist-content-p {
+  color: #404040; }
+
+.pricing-process-section {
+  background: #4ecdc4; }
+
+.pricing-process-h2 {
+  color: #1a535c; }
+
+.pricing-process-item-p {
+  padding: .5rem 0; }
+
+.pricing-process-item {
+  background: #f7fff7;
+  padding: .75rem;
+  text-align: left;
+  width: 100%;
+  border: 2px solid #4ecdc4;
+  border-radius: 3px;
+  margin: .5rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
+  transition: all .1 ease; }
+
+.pricing-process-flex {
+  display: flex;
+  flex-direction: column; }
+
+.pricing-process-item-img {
+  width: 200px;
+  height: 200px;
+  padding: .5rem 0; }
+
+.pricing-checklist-content-p {
+  font-size: .85rem;
+  padding: .25rem 0; }
+
+.pricing-checkmark {
+  width: 15px; }
+
+.pricing-process-item-inner-flex {
+  display: flex;
+  flex-direction: row;
+  padding-top: .5rem; }
+
+.inner-flex-links {
+  display: flex;
+  flex-direction: column;
+  background: #1a535c;
+  border-radius: 3px;
+  width: 50%;
+  text-align: center; }
+
+.inner-flex-link {
+  color: #4ecdc4;
+  padding: .65rem;
+  transition: .2s all ease-in-out;
+  font-weight: bold; }
+
+.inner-flex-link:hover {
+  color: #f7fff7;
+  background: #ff914d;
+  border-radius: 3px; }
+
+.inner-flex-img {
+  width: 100px;
+  height: 100px;
+  margin: auto; }
+
+@media screen and (min-width: 768px) {
+  .pricing-process-flex {
+    flex-direction: row; } }
 
