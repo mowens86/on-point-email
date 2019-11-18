@@ -1681,8 +1681,8 @@ header {
     width: 350px;
     height: 250px; }
   .template-process-item-img {
-    width: 40%;
-    height: 40%;
+    width: 125px;
+    height: auto;
     margin: auto; }
   .template-process-item-p {
     text-align: left;
@@ -1693,8 +1693,8 @@ header {
     width: 400px;
     height: 250px; }
   .template-process-item-img {
-    width: 45%;
-    height: 45%;
+    width: 150px;
+    height: auto;
     margin: auto; } }
 
 @media screen and (min-width: 1238px) {
@@ -1779,8 +1779,8 @@ header {
     width: 350px;
     height: 250px; }
   .strategy-process-item-img {
-    width: 40%;
-    height: 40%;
+    width: 125px;
+    height: auto;
     margin: auto; }
   .strategy-process-item-p {
     text-align: left;
@@ -1791,8 +1791,8 @@ header {
     width: 400px;
     height: 250px; }
   .strategy-process-item-img {
-    width: 45%;
-    height: 45%;
+    width: 150px;
+    height: auto;
     margin: auto; } }
 
 @media screen and (min-width: 1238px) {
