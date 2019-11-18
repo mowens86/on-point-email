@@ -1220,7 +1220,8 @@ header {
 }
 
 .portfolio-hero-content-h1,
-.template-hero-content-h1 {
+.template-hero-content-h1,
+.strategy-hero-content-h1 {
     color: $themeDarkAqua;
 }
 
@@ -1231,7 +1232,9 @@ header {
     .portfolio-hero-container,
     .portfolio-work-container,
     .template-hero-container,
-    .template-process-container {
+    .template-process-container,
+    .strategy-hero-container,
+    .strategy-process-container {
         padding: 3% 5%;
     }
 }
@@ -1242,7 +1245,9 @@ header {
     .portfolio-hero-content-p,
     .portfolio-quote-content-p,
     .template-hero-content-h1,
-    .template-hero-content-p {
+    .template-hero-content-p,
+    .strategy-hero-content-h1,
+    .strategy-hero-content-p  {
         padding: 0 20%;
     }
 }
@@ -1251,7 +1256,8 @@ header {
 
     .portfolio-hero-content-p,
     .portfolio-quote-content-p,
-    .template-hero-content-p {
+    .template-hero-content-p,
+    .strategy-hero-content-p {
         padding: 0 30%;
     }
 }
@@ -1261,7 +1267,9 @@ header {
     .portfolio-hero-container,
     .portfolio-work-container,
     .template-hero-container,
-    .template-process-container {
+    .template-process-container,
+    .strategy-hero-container,
+    .strategy-process-container {
         max-width: 1368px;
         margin: 0 auto;
     }
@@ -1304,7 +1312,7 @@ header {
 .template-process-item-img {
     width: 200px;
     height: 200px;
-    padding: 1rem 0;
+    padding: .5rem 0;
 }
 
 @-webkit-keyframes swing {
@@ -1339,15 +1347,19 @@ header {
 /////////// 9a. Services - Email Templates media queries ////////////
 
 @media screen and (min-width: 600px) {
-    .template-process-item-flex {
+    .template-process-item-flex{
         display: flex;
         flex-direction: row;
     }
 
     .template-process-item-p {
         text-align: left;
-        padding: 2rem 1rem 1rem 1rem;
-        margin: auto;
+        padding: 1rem;
+    }
+
+    .template-process-item-img {
+        width: 100px;
+        height: 100px;
     }
 }
 
@@ -1397,6 +1409,10 @@ header {
 
 /////////// 10a. Services - Email Strategy mobile-first responsive styles ////////////
 
+.strategy-process-h2 {
+    color: $fontGray;
+}
+
 .strategy-process-section {
     background: $themeRed;
 }
@@ -1425,7 +1441,7 @@ header {
 .strategy-process-item-img {
     width: 200px;
     height: 200px;
-    padding: 1rem 0;
+    padding: .5rem 0;
 }
 
 @-webkit-keyframes swing-2 {
@@ -1466,6 +1482,70 @@ header {
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
 }
+
+/////////// 11a. Services - Email Strategy media queries /////////////
+
+@media screen and (min-width: 600px) {
+    .strategy-process-item-flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .strategy-process-item-p {
+        text-align: left;
+        padding: 1rem;
+    }
+
+    .strategy-process-item-img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+    .strategy-process-flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .strategy-process-item {
+        width: 350px;
+        height: 250px;
+    }
+
+    .strategy-process-item-img {
+        width: 130px;
+        height: 130px;
+        margin: auto;
+    }
+
+    .strategy-process-item-p {
+        text-align: left;
+        padding: .5rem .75rem;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .strategy-process-item {
+        width: 400px;
+        height: 250px;
+    }
+
+    .strategy-process-item-img {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1238px) {
+    .strategy-process-item {
+        margin: 1.5rem;
+    }
+}
+
 
 ////////// 14a. Porfolio mobile-first responsive styles  ////////////
 
