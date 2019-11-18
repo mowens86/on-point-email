@@ -1067,7 +1067,8 @@ header {
   color: #f7fff7; }
 
 .testimonial-content-p {
-  font-style: italic; }
+  font-style: italic;
+  color: #f7fff7; }
 
 .testimonial-content-h2 {
   font-family: 'Yellowtail', cursive;
