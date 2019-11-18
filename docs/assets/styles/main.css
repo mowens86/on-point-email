@@ -716,9 +716,6 @@ html {
 h1, h2, h3, h4, h5, h6, p, a, span, div, input, textarea {
   font-family: 'Fira Sans', sans-serif; }
 
-p {
-  color: #404040; }
-
 a {
   text-decoration: none; }
 
@@ -1600,7 +1597,8 @@ header {
   background: #FFD9C2; }
 
 .template-process-h1,
-.template-process-h2 {
+.template-process-h2,
+.template-process-item-p {
   color: #404040; }
 
 .template-process-h1 {
@@ -1689,7 +1687,8 @@ header {
   .template-process-item {
     margin: 1.5rem; } }
 
-.strategy-process-h2 {
+.strategy-process-h2,
+.strategy-process-item-p {
   color: #404040; }
 
 .strategy-process-section {
@@ -1854,6 +1853,9 @@ header {
 
 .product-overlay-img {
   width: 50px; }
+
+.product-overlay-img p {
+  color: #f7fff7; }
 
 .product-caption-h3 {
   color: #ff6b6b;

@@ -57,10 +57,6 @@ h1, h2, h3, h4, h5, h6, p, a, span, div, input, textarea {
     font-family: 'Fira Sans', sans-serif;
 }
 
-p {
-    color: $fontGray;
-}
-
 a {
     text-decoration: none;
 }
@@ -1284,7 +1280,8 @@ header {
 }
 
 .template-process-h1,
-.template-process-h2 {
+.template-process-h2,
+.template-process-item-p {
     color: $fontGray;
 }
 
@@ -1410,7 +1407,8 @@ header {
 
 /////////// 10a. Services - Email Strategy mobile-first responsive styles ////////////
 
-.strategy-process-h2 {
+.strategy-process-h2,
+.strategy-process-item-p {
     color: $fontGray;
 }
 
@@ -1637,6 +1635,10 @@ header {
 
 .product-overlay-img {
     width: 50px;
+}
+
+.product-overlay-img p {
+    color: $themeWhite;
 }
 
 .product-caption-h3 {
