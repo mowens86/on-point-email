@@ -1701,7 +1701,7 @@ header {
     justify-content: center; }
   .template-process-item {
     width: 350px;
-    height: 250px; }
+    height: 280px; }
   .template-process-item-img {
     width: 125px;
     height: auto;
@@ -1740,7 +1740,7 @@ header {
   padding: .75rem;
   text-align: center;
   width: 100%;
-  border: 2px solid #4ecdc4;
+  border: 2px solid #8a3737;
   border-radius: 3px;
   margin: .5rem;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
